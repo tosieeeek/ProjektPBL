@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: HangmanGame Class Reference</title>
+<title>Wisielec: HangmanGame Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">Wisielec
    </div>
   </td>
  </tr>
@@ -94,18 +94,20 @@ $(function(){initNavTree('class_hangman_game.html','','class_hangman_game-member
 
 <p>Klasa zarządzająca stanem i logiką gry w Wisielca.  
  <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_hangman_game_8h_source.html">HangmanGame.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a062acf65481c29f1659dfa4766ce52b7" id="r_a062acf65481c29f1659dfa4766ce52b7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a062acf65481c29f1659dfa4766ce52b7">HangmanGame</a> (string wylosowane_haslo)</td></tr>
-<tr class="memdesc:a062acf65481c29f1659dfa4766ce52b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy gry.  <br /></td></tr>
+<tr class="memitem:afb5ea6b3ccb2e46f6e2869126ba493f3" id="r_afb5ea6b3ccb2e46f6e2869126ba493f3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afb5ea6b3ccb2e46f6e2869126ba493f3">HangmanGame</a> (string drawn_word)</td></tr>
+<tr class="memdesc:afb5ea6b3ccb2e46f6e2869126ba493f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy gry.  <br /></td></tr>
 <tr class="memitem:acbbf96d88ff6c7cec7c12257d99a4c8b" id="r_acbbf96d88ff6c7cec7c12257d99a4c8b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acbbf96d88ff6c7cec7c12257d99a4c8b">start</a> ()</td></tr>
 <tr class="memdesc:acbbf96d88ff6c7cec7c12257d99a4c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rozpoczyna główną pętlę rozgrywki.  <br /></td></tr>
-<tr class="memitem:a5e3fbf03f408c52925c8e87cb3302d22" id="r_a5e3fbf03f408c52925c8e87cb3302d22"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5e3fbf03f408c52925c8e87cb3302d22">sprawdzLitere</a> (char litera)</td></tr>
-<tr class="memdesc:a5e3fbf03f408c52925c8e87cb3302d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weryfikuje, czy podana litera znajduje się w haśle.  <br /></td></tr>
-<tr class="memitem:aa6c426d779399b90404dd640ce7345c3" id="r_aa6c426d779399b90404dd640ce7345c3"><td class="memItemLeft"><a id="aa6c426d779399b90404dd640ce7345c3" name="aa6c426d779399b90404dd640ce7345c3"></a>
-void&#160;</td><td class="memItemRight"><b>zakonczGre</b> ()</td></tr>
-<tr class="memdesc:aa6c426d779399b90404dd640ce7345c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyświetla ekran końcowy podsumowujący wynik gry. <br /></td></tr>
+<tr class="memitem:a1f55a9de4e61784720ec0ea24dad0571" id="r_a1f55a9de4e61784720ec0ea24dad0571"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1f55a9de4e61784720ec0ea24dad0571">checkLetter</a> (char letter)</td></tr>
+<tr class="memdesc:a1f55a9de4e61784720ec0ea24dad0571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weryfikuje, czy podana litera znajduje się w haśle.  <br /></td></tr>
+<tr class="memitem:a345038fde9a1abda1b89b8fcbeda101d" id="r_a345038fde9a1abda1b89b8fcbeda101d"><td class="memItemLeft"><a id="a345038fde9a1abda1b89b8fcbeda101d" name="a345038fde9a1abda1b89b8fcbeda101d"></a>
+void&#160;</td><td class="memItemRight"><b>endGame</b> ()</td></tr>
+<tr class="memdesc:a345038fde9a1abda1b89b8fcbeda101d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyświetla ekran końcowy podsumowujący wynik gry. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Klasa zarządzająca stanem i logiką gry w Wisielca. </p>
@@ -113,33 +115,25 @@ void&#160;</td><td class="memItemRight"><b>zakonczGre</b> ()</td></tr>
 <li>Odpowiada za wyświetlanie interfejsu w konsoli, weryfikację podawanych przez gracza liter oraz sprawdzanie warunków końca gry. </li>
 </ul>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a062acf65481c29f1659dfa4766ce52b7" name="a062acf65481c29f1659dfa4766ce52b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a062acf65481c29f1659dfa4766ce52b7">&#9670;&#160;</a></span>HangmanGame()</h2>
+<a id="afb5ea6b3ccb2e46f6e2869126ba493f3" name="afb5ea6b3ccb2e46f6e2869126ba493f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5ea6b3ccb2e46f6e2869126ba493f3">&#9670;&#160;</a></span>HangmanGame()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">HangmanGame::HangmanGame </td>
           <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>wylosowane_haslo</em></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>drawn_word</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Konstruktor klasy gry. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wylosowane_haslo</td><td>Słowo, które zostało wylosowane dla obecnej partii. </td></tr>
+    <tr><td class="paramname">drawn_word</td><td>Słowo, które zostało wylosowane dla obecnej partii. </td></tr>
   </table>
   </dd>
 </dl>
@@ -147,27 +141,19 @@ void&#160;</td><td class="memItemRight"><b>zakonczGre</b> ()</td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a5e3fbf03f408c52925c8e87cb3302d22" name="a5e3fbf03f408c52925c8e87cb3302d22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e3fbf03f408c52925c8e87cb3302d22">&#9670;&#160;</a></span>sprawdzLitere()</h2>
+<a id="a1f55a9de4e61784720ec0ea24dad0571" name="a1f55a9de4e61784720ec0ea24dad0571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f55a9de4e61784720ec0ea24dad0571">&#9670;&#160;</a></span>checkLetter()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void HangmanGame::sprawdzLitere </td>
+          <td class="memname">void HangmanGame::checkLetter </td>
           <td>(</td>
-          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>litera</em></span></td><td>)</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>letter</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Weryfikuje, czy podana litera znajduje się w haśle. </p>
@@ -175,7 +161,7 @@ void&#160;</td><td class="memItemRight"><b>zakonczGre</b> ()</td></tr>
 <li>Aktualizuje zamaskowane hasło w przypadku trafienia, lub zmniejsza liczbę żyć w przypadku błędu.</li>
 <li><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">litera</td><td>Znak wprowadzony przez gracza. </td></tr>
+    <tr><td class="paramname">letter</td><td>Znak wprowadzony przez gracza. </td></tr>
   </table>
   </dd>
 </dl>
@@ -189,9 +175,6 @@ void&#160;</td><td class="memItemRight"><b>zakonczGre</b> ()</td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void HangmanGame::start </td>
@@ -200,11 +183,6 @@ void&#160;</td><td class="memItemRight"><b>zakonczGre</b> ()</td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Rozpoczyna główną pętlę rozgrywki. </p>
@@ -214,8 +192,9 @@ void&#160;</td><td class="memItemRight"><b>zakonczGre</b> ()</td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><b>main.cpp</b></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_hangman_game_8h_source.html">HangmanGame.h</a></li>
+<li><b>HangmanGame.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

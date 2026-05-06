@@ -5,17 +5,21 @@
 Klasa zarządzająca stanem i logiką gry w Wisielca.  
 
 
+
+
+{\ttfamily \+\#include $<$Hangman\+Game.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\doxymbox{\hyperlink{class_hangman_game_a062acf65481c29f1659dfa4766ce52b7}{Hangman\+Game}} (string wylosowane\+\_\+haslo)
+\doxymbox{\hyperlink{class_hangman_game_afb5ea6b3ccb2e46f6e2869126ba493f3}{Hangman\+Game}} (string drawn\+\_\+word)
 \begin{DoxyCompactList}\small\item\em Konstruktor klasy gry. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_hangman_game_acbbf96d88ff6c7cec7c12257d99a4c8b}{start}} ()
 \begin{DoxyCompactList}\small\item\em Rozpoczyna główną pętlę rozgrywki. \end{DoxyCompactList}\item 
-void \doxymbox{\hyperlink{class_hangman_game_a5e3fbf03f408c52925c8e87cb3302d22}{sprawdz\+Litere}} (char litera)
+void \doxymbox{\hyperlink{class_hangman_game_a1f55a9de4e61784720ec0ea24dad0571}{check\+Letter}} (char letter)
 \begin{DoxyCompactList}\small\item\em Weryfikuje, czy podana litera znajduje się w haśle. \end{DoxyCompactList}\item 
-\Hypertarget{class_hangman_game_aa6c426d779399b90404dd640ce7345c3}\label{class_hangman_game_aa6c426d779399b90404dd640ce7345c3} 
-void {\bfseries zakoncz\+Gre} ()
+\Hypertarget{class_hangman_game_a345038fde9a1abda1b89b8fcbeda101d}\label{class_hangman_game_a345038fde9a1abda1b89b8fcbeda101d} 
+void {\bfseries end\+Game} ()
 \begin{DoxyCompactList}\small\item\em Wyświetla ekran końcowy podsumowujący wynik gry. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -30,11 +34,11 @@ Klasa zarządzająca stanem i logiką gry w Wisielca.
 \label{doc-constructors}
 \Hypertarget{class_hangman_game_doc-constructors}
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class_hangman_game_a062acf65481c29f1659dfa4766ce52b7}\index{HangmanGame@{HangmanGame}!HangmanGame@{HangmanGame}}
+\Hypertarget{class_hangman_game_afb5ea6b3ccb2e46f6e2869126ba493f3}\index{HangmanGame@{HangmanGame}!HangmanGame@{HangmanGame}}
 \index{HangmanGame@{HangmanGame}!HangmanGame@{HangmanGame}}
 \doxysubsubsection{\texorpdfstring{HangmanGame()}{HangmanGame()}}
-{\footnotesize\ttfamily \label{class_hangman_game_a062acf65481c29f1659dfa4766ce52b7} 
-Hangman\+Game::\+\+Hangman\+Game (\begin{DoxyParamCaption}\item[{string}]{wylosowane\+\_\+haslo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+{\footnotesize\ttfamily \label{class_hangman_game_afb5ea6b3ccb2e46f6e2869126ba493f3} 
+Hangman\+Game::\+\+Hangman\+Game (\begin{DoxyParamCaption}\item[{string}]{drawn\+\_\+word}{}\end{DoxyParamCaption})}
 
 
 
@@ -42,7 +46,7 @@ Konstruktor klasy gry.
 
 
 \begin{DoxyParams}{Parameters}
-{\em wylosowane\+\_\+haslo} & Słowo, które zostało wylosowane dla obecnej partii. \\
+{\em drawn\+\_\+word} & Słowo, które zostało wylosowane dla obecnej partii. \\
 \hline
 \end{DoxyParams}
 
@@ -50,11 +54,11 @@ Konstruktor klasy gry.
 \label{doc-func-members}
 \Hypertarget{class_hangman_game_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_hangman_game_a5e3fbf03f408c52925c8e87cb3302d22}\index{HangmanGame@{HangmanGame}!sprawdzLitere@{sprawdzLitere}}
-\index{sprawdzLitere@{sprawdzLitere}!HangmanGame@{HangmanGame}}
-\doxysubsubsection{\texorpdfstring{sprawdzLitere()}{sprawdzLitere()}}
-{\footnotesize\ttfamily \label{class_hangman_game_a5e3fbf03f408c52925c8e87cb3302d22} 
-void Hangman\+Game::\+sprawdz\+Litere (\begin{DoxyParamCaption}\item[{char}]{litera}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\Hypertarget{class_hangman_game_a1f55a9de4e61784720ec0ea24dad0571}\index{HangmanGame@{HangmanGame}!checkLetter@{checkLetter}}
+\index{checkLetter@{checkLetter}!HangmanGame@{HangmanGame}}
+\doxysubsubsection{\texorpdfstring{checkLetter()}{checkLetter()}}
+{\footnotesize\ttfamily \label{class_hangman_game_a1f55a9de4e61784720ec0ea24dad0571} 
+void Hangman\+Game::\+check\+Letter (\begin{DoxyParamCaption}\item[{char}]{letter}{}\end{DoxyParamCaption})}
 
 
 
@@ -65,7 +69,7 @@ Weryfikuje, czy podana litera znajduje się w haśle.
 \item Aktualizuje zamaskowane hasło w przypadku trafienia, lub zmniejsza liczbę żyć w przypadku błędu.
 \item 
 \begin{DoxyParams}{Parameters}
-{\em litera} & Znak wprowadzony przez gracza. \\
+{\em letter} & Znak wprowadzony przez gracza. \\
 \hline
 \end{DoxyParams}
 
@@ -73,7 +77,7 @@ Weryfikuje, czy podana litera znajduje się w haśle.
 \index{start@{start}!HangmanGame@{HangmanGame}}
 \doxysubsubsection{\texorpdfstring{start()}{start()}}
 {\footnotesize\ttfamily \label{class_hangman_game_acbbf96d88ff6c7cec7c12257d99a4c8b} 
-void Hangman\+Game::\+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+void Hangman\+Game::\+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
@@ -84,6 +88,7 @@ Rozpoczyna główną pętlę rozgrywki.
 \item Pętla działa do momentu odgadnięcia hasła lub utraty wszystkich żyć. 
 \end{DoxyItemize}
 
-The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
 \item 
-main.\+cpp\end{DoxyCompactItemize}
+Hangman\+Game.\+h\item 
+Hangman\+Game.\+cpp\end{DoxyCompactItemize}

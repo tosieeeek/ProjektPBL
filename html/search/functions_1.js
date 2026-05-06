@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['losujhaslo_0',['losujHaslo',['../class_word_manager.html#a70137f9a900922d5e9e2247f9b193938',1,'WordManager']]]
+  ['drawword_0',['drawWord',['../class_word_manager.html#a578b0d8019743f4f4a46ff834bd56c4d',1,'WordManager']]]
 ];

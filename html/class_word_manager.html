@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: WordManager Class Reference</title>
+<title>Wisielec: WordManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">My Project
+   <div id="projectname">Wisielec
    </div>
   </td>
  </tr>
@@ -94,42 +94,66 @@ $(function(){initNavTree('class_word_manager.html','','class_word_manager-member
 
 <p>Klasa odpowiedzialna za zarządzanie bazą haseł.  
  <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_word_manager_8h_source.html">WordManager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3674ff6b9d00b9bff7e7a3c0ff7fe4ee" id="r_a3674ff6b9d00b9bff7e7a3c0ff7fe4ee"><td class="memItemLeft"><a id="a3674ff6b9d00b9bff7e7a3c0ff7fe4ee" name="a3674ff6b9d00b9bff7e7a3c0ff7fe4ee"></a>
-&#160;</td><td class="memItemRight"><b>WordManager</b> ()</td></tr>
-<tr class="memdesc:a3674ff6b9d00b9bff7e7a3c0ff7fe4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor inicjalizujący bazę słów. <br /></td></tr>
-<tr class="memitem:a70137f9a900922d5e9e2247f9b193938" id="r_a70137f9a900922d5e9e2247f9b193938"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a70137f9a900922d5e9e2247f9b193938">losujHaslo</a> ()</td></tr>
-<tr class="memdesc:a70137f9a900922d5e9e2247f9b193938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Losuje hasło z dostępnej bazy słów.  <br /></td></tr>
+<tr class="memitem:ad23712cf65cc73edb4b6410667175472" id="r_ad23712cf65cc73edb4b6410667175472"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad23712cf65cc73edb4b6410667175472">WordManager</a> (string fileName)</td></tr>
+<tr class="memdesc:ad23712cf65cc73edb4b6410667175472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor inicjalizujący bazę słów z pliku.  <br /></td></tr>
+<tr class="memitem:a578b0d8019743f4f4a46ff834bd56c4d" id="r_a578b0d8019743f4f4a46ff834bd56c4d"><td class="memItemLeft">string&#160;</td><td class="memItemRight"><a class="el" href="#a578b0d8019743f4f4a46ff834bd56c4d">drawWord</a> ()</td></tr>
+<tr class="memdesc:a578b0d8019743f4f4a46ff834bd56c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Losuje hasło z dostępnej bazy słów.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Klasa odpowiedzialna za zarządzanie bazą haseł. </p>
 <ul>
-<li>Klasa przechowuje wektor dostępnych słów i udostępnia metodę pozwalającą na wylosowanie jednego z nich. </li>
+<li>Klasa wczytuje słowa z podanego pliku tekstowego, przechowuje wektor dostępnych słów i udostępnia metodę pozwalającą na wylosowanie jednego z nich. </li>
 </ul>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a70137f9a900922d5e9e2247f9b193938" name="a70137f9a900922d5e9e2247f9b193938"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70137f9a900922d5e9e2247f9b193938">&#9670;&#160;</a></span>losujHaslo()</h2>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad23712cf65cc73edb4b6410667175472" name="ad23712cf65cc73edb4b6410667175472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23712cf65cc73edb4b6410667175472">&#9670;&#160;</a></span>WordManager()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string WordManager::losujHaslo </td>
+          <td class="memname">WordManager::WordManager </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor inicjalizujący bazę słów z pliku. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>Nazwa pliku .txt, z którego zostaną wczytane hasła.<ul>
+<li>Jeśli plik nie zostanie znaleziony lub będzie pusty, klasa załaduje domyślną, awaryjną bazę słów. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Zabezpieczenie na wypadek braku pliku</p>
+<p>&lt; Inicjalizacja generatora liczb losowych</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a578b0d8019743f4f4a46ff834bd56c4d" name="a578b0d8019743f4f4a46ff834bd56c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a578b0d8019743f4f4a46ff834bd56c4d">&#9670;&#160;</a></span>drawWord()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string WordManager::drawWord </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Losuje hasło z dostępnej bazy słów. </p>
@@ -137,8 +161,9 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><b>main.cpp</b></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_word_manager_8h_source.html">WordManager.h</a></li>
+<li><b>WordManager.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

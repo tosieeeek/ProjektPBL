@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hangmangame_0',['HangmanGame',['../class_hangman_game.html',1,'HangmanGame'],['../class_hangman_game.html#a062acf65481c29f1659dfa4766ce52b7',1,'HangmanGame::HangmanGame()']]]
+  ['checkletter_0',['checkLetter',['../class_hangman_game.html#a1f55a9de4e61784720ec0ea24dad0571',1,'HangmanGame']]]
 ];

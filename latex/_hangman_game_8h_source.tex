@@ -1,0 +1,31 @@
+\doxysection{Hangman\+Game.\+h}
+\hypertarget{_hangman_game_8h_source}{}\label{_hangman_game_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ HANGMANGAME\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ HANGMANGAME\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_hangman_game_afb5ea6b3ccb2e46f6e2869126ba493f3}{HangmanGame}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{string}\ word;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{string}\ hidden\_word;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ lives;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ vector<char>\ guessed\_letters;\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ wasEntered(\textcolor{keywordtype}{char}\ letter);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ displayStatus();}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \doxymbox{\hyperlink{class_hangman_game_afb5ea6b3ccb2e46f6e2869126ba493f3}{HangmanGame}}(\textcolor{keywordtype}{string}\ drawn\_word);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_hangman_game_acbbf96d88ff6c7cec7c12257d99a4c8b}{start}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_hangman_game_a1f55a9de4e61784720ec0ea24dad0571}{checkLetter}}(\textcolor{keywordtype}{char}\ letter);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_hangman_game_a345038fde9a1abda1b89b8fcbeda101d}{endGame}}();}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

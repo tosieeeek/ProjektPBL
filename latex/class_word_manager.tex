@@ -5,13 +5,16 @@
 Klasa odpowiedzialna za zarządzanie bazą haseł.  
 
 
+
+
+{\ttfamily \+\#include $<$Word\+Manager.\+h$>$}
+
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_word_manager_a3674ff6b9d00b9bff7e7a3c0ff7fe4ee}\label{class_word_manager_a3674ff6b9d00b9bff7e7a3c0ff7fe4ee} 
-{\bfseries Word\+Manager} ()
-\begin{DoxyCompactList}\small\item\em Konstruktor inicjalizujący bazę słów. \end{DoxyCompactList}\item 
-string \doxymbox{\hyperlink{class_word_manager_a70137f9a900922d5e9e2247f9b193938}{losuj\+Haslo}} ()
+\doxymbox{\hyperlink{class_word_manager_ad23712cf65cc73edb4b6410667175472}{Word\+Manager}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Konstruktor inicjalizujący bazę słów z pliku. \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{class_word_manager_a578b0d8019743f4f4a46ff834bd56c4d}{draw\+Word}} ()
 \begin{DoxyCompactList}\small\item\em Losuje hasło z dostępnej bazy słów. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -20,17 +23,42 @@ Klasa odpowiedzialna za zarządzanie bazą haseł.
 
 
 \begin{DoxyItemize}
-\item Klasa przechowuje wektor dostępnych słów i udostępnia metodę pozwalającą na wylosowanie jednego z nich. 
+\item Klasa wczytuje słowa z podanego pliku tekstowego, przechowuje wektor dostępnych słów i udostępnia metodę pozwalającą na wylosowanie jednego z nich. 
 \end{DoxyItemize}
+
+\label{doc-constructors}
+\Hypertarget{class_word_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_word_manager_ad23712cf65cc73edb4b6410667175472}\index{WordManager@{WordManager}!WordManager@{WordManager}}
+\index{WordManager@{WordManager}!WordManager@{WordManager}}
+\doxysubsubsection{\texorpdfstring{WordManager()}{WordManager()}}
+{\footnotesize\ttfamily \label{class_word_manager_ad23712cf65cc73edb4b6410667175472} 
+Word\+Manager::\+\+Word\+Manager (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor inicjalizujący bazę słów z pliku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Nazwa pliku .txt, z którego zostaną wczytane hasła.
+\begin{DoxyItemize}
+\item Jeśli plik nie zostanie znaleziony lub będzie pusty, klasa załaduje domyślną, awaryjną bazę słów. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+Zabezpieczenie na wypadek braku pliku
+
+\texorpdfstring{$<$}{<} Inicjalizacja generatora liczb losowych
 
 \label{doc-func-members}
 \Hypertarget{class_word_manager_doc-func-members}
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_word_manager_a70137f9a900922d5e9e2247f9b193938}\index{WordManager@{WordManager}!losujHaslo@{losujHaslo}}
-\index{losujHaslo@{losujHaslo}!WordManager@{WordManager}}
-\doxysubsubsection{\texorpdfstring{losujHaslo()}{losujHaslo()}}
-{\footnotesize\ttfamily \label{class_word_manager_a70137f9a900922d5e9e2247f9b193938} 
-string Word\+Manager::\+losuj\+Haslo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\Hypertarget{class_word_manager_a578b0d8019743f4f4a46ff834bd56c4d}\index{WordManager@{WordManager}!drawWord@{drawWord}}
+\index{drawWord@{drawWord}!WordManager@{WordManager}}
+\doxysubsubsection{\texorpdfstring{drawWord()}{drawWord()}}
+{\footnotesize\ttfamily \label{class_word_manager_a578b0d8019743f4f4a46ff834bd56c4d} 
+string Word\+Manager::\+draw\+Word (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 
 
@@ -41,6 +69,7 @@ Zwraca wylosowane słowo w postaci ciągu znaków (string).
 \end{DoxyReturn}
 
 
-The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
 \item 
-main.\+cpp\end{DoxyCompactItemize}
+Word\+Manager.\+h\item 
+Word\+Manager.\+cpp\end{DoxyCompactItemize}

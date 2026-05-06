@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zakonczgre_0',['zakonczGre',['../class_hangman_game.html#aa6c426d779399b90404dd640ce7345c3',1,'HangmanGame']]]
+  ['start_0',['start',['../class_hangman_game.html#acbbf96d88ff6c7cec7c12257d99a4c8b',1,'HangmanGame']]]
 ];
